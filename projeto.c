@@ -19,6 +19,12 @@ int mult(int a, int b)
 	return mult_result;
 }
 
+int div(int a, int b)
+{
+	int div_result = a / b;
+	return div_result;
+}
+
 int main()
 {
 	int num1, num2;
@@ -29,5 +35,6 @@ int main()
 	printf("Soma: %d\n", sum(num1, num2));
 	printf("Subtracao: %d\n", sub(num1, num2));
 	printf("Multiplicacao: %d\n", mult(num1, num2));
+	printf("Divisao: %d\n", div(num1, num2));
 	return 0;
 }
