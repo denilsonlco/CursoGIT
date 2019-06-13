@@ -13,6 +13,12 @@ int sub(int a, int b)
 	return sub_result;
 }
 
+int mult(int a, int b)
+{
+	int mult_result = a * b;
+	return mult_result;
+}
+
 int main()
 {
 	int num1, num2;
@@ -22,5 +28,6 @@ int main()
 	scanf("%d", &num2);
 	printf("Soma: %d\n", sum(num1, num2));
 	printf("Subtracao: %d\n", sub(num1, num2));
+	printf("Multiplicacao: %d\n", mult(num1, num2));
 	return 0;
 }
