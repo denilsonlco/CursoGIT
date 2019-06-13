@@ -3,17 +3,24 @@
 
 int sum(int a, int b)
 {
-	int soma_result = a + b;
+	int sum_result = a + b;
 	return sum_result;
+}
+
+int sub(int a, int b)
+{
+	int sub_result = a - b;
+	return sub_result;
 }
 
 int main()
 {
 	int num1, num2;
 	printf("Digite o primeiro numero: ");
-	Scanf ("%i", &num1);
+	scanf("%d", &num1);
 	printf("Digite o segundo numero: ");
-	Scanf ("%i", &num2);
-	printf("Soma: ", sum_result(num1, num2));
+	scanf("%d", &num2);
+	printf("Soma: %d\n", sum(num1, num2));
+	printf("Subtracao: %d\n", sub(num1, num2));
 	return 0;
 }
