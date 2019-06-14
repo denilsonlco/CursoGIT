@@ -19,22 +19,41 @@ int mult(int a, int b)
 	return mult_result;
 }
 
-int div(int a, int b)
+float division(int a, int b)
 {
-	int div_result = a / b;
-	return div_result;
+	if(b==0)
+	{
+		printf("\n Erro! Divisao por zero\n");
+		printf(" Digite o segundo numero novamente: ");
+		scanf("%d", &b);
+		return division(a, b);
+	}
+	else
+	{
+		int div_result = a / b;
+		return div_result;
+	}
 }
 
 int main()
 {
-	int a, b;
-	printf("Digite o primeiro numero: ");
-	scanf("%d", &a);
-	printf("Digite o segundo numero: ");
-	scanf("%d", &b);
-	printf("Soma: %d\n", sum(a, b));
-	printf("Subtracao: %d\n", sub(a, b));
-	printf("Multiplicacao: %d\n", mult(a, b));
-	printf("Divisao: %d\n", div(a, b));
+	int num1, num2;
+	printf(" --------- CALCULADORA ---------\n\n");
+	printf(" Digite o primeiro numero: ");
+	scanf("%d", &num1);
+	printf(" Digite o segundo numero: ");
+	scanf("%d", &num2);
+	/*
+	printf("\n *Soma: %d\n", sum(num1, num2));
+	printf(" *Subtracao: %d\n", sub(num1, num2));
+	printf(" *Multiplicacao: %d\n", mult(num1, num2));
+	printf(" *Divisao: %.1f\n", division(num1, num2));
+	*/
+	printf("\n  ----------------------------------------------------\n");
+	printf(" |  Soma  |  Subtracao  |  Multiplicacao  |  Divisao  |\n");
+	printf("  ----------------------------------------------------\n");
+	printf(" |   %d    |      %d      |        %d       |    %.1f    |\n", sum(num1, num2), sub(num1, num2), mult(num1, num2), division(num1, num2));
+	printf("  ----------------------------------------------------\n");
+	printf("\n Fim. Obrigado!\n");
 	return 0;
 }
