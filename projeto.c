@@ -27,14 +27,14 @@ int div(int a, int b)
 
 int main()
 {
-	int num1, num2;
+	int a, b;
 	printf("Digite o primeiro numero: ");
-	scanf("%d", &num1);
+	scanf("%d", &a);
 	printf("Digite o segundo numero: ");
-	scanf("%d", &num2);
-	printf("Soma: %d\n", sum(num1, num2));
-	printf("Subtracao: %d\n", sub(num1, num2));
-	printf("Multiplicacao: %d\n", mult(num1, num2));
-	printf("Divisao: %d\n", div(num1, num2));
+	scanf("%d", &b);
+	printf("Soma: %d\n", sum(a, b));
+	printf("Subtracao: %d\n", sub(a, b));
+	printf("Multiplicacao: %d\n", mult(a, b));
+	printf("Divisao: %d\n", div(a, b));
 	return 0;
 }
